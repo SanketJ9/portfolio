@@ -1,0 +1,119 @@
+.contact-cont {
+    position: relative;
+    margin: 0 auto;
+    background-color: var(--dark);
+    height: 100vh;
+    max-width: 1280px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    color: var(--white);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.contact-left-section {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.contact-right-section {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.email-art {
+    width: 500px;
+}
+
+.scroll-area {
+    scroll-snap-align: start;
+}
+
+.contact-heading {
+    font-size: 40px;
+}
+
+.form {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: left;
+}
+
+.input {
+    background-color: var(--mid);
+    padding-left: 10px;
+    margin: 5px 0;
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 2px;
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    border-radius: 4px;
+}
+
+.input:focus,
+#message:focus {
+    outline: none;
+    background: var(--primary);
+}
+
+
+
+.form-first-row {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+#name {
+    width: 350px;
+}
+
+#message {
+    padding: 10px 10px;
+    margin: 5px 0;
+    width: 100%;
+    border: none;
+    border-radius: 2px;
+    background-color: var(--mid);
+    height: 150px;
+    resize: none;
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    border-radius: 4px;
+}
+
+.send-btn {
+    font-size: 18px;
+    border: none;
+    background-color: var(--primary);
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 600;
+    color: var(--white);
+    border-radius: 4px;
+    margin: 5px 0;
+    height: 40px;
+    width: 100px;
+    align-self: self-end;
+}
+
+.send-btn:active {
+    background-color: var(--mid);
+    color: var(--white);
+}
+
+::placeholder {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--white);
+}

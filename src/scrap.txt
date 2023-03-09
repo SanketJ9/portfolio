@@ -1,0 +1,30 @@
+.project-card {
+    margin: 0 auto;
+    margin-bottom: 40px;
+    width: 800px;
+    height: max-content;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-ss {
+    width: 350px;
+    border-radius: 4px;
+}
+
+.project-details {
+    width: 400px;
+}
+
+.project-title {
+    font-size: 35px;
+    margin: 10px 0 0 0;
+}
+
+.project-desc {
+    font-size: 16px;
+    margin: 0;
+    color: var(--grey);
+}
