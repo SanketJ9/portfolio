@@ -1,5 +1,8 @@
-.App {
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
-    height: 100vh;
+.container{
+    margin: 0 auto;
+    background-color: var(--dark);
+    max-width: 1280px;
+    padding-left: 1em;
+    padding-right: 1em;
+    color: var(--white);
 }

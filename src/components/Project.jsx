@@ -19,13 +19,11 @@ function Project() {
 
 
     return (
-        <div className='project-cont scroll-area'>
-            <h2 className='project-heading'>Projects/</h2>
-            <div className='projects'>
-                {projectCards}
-            </div>
-        </div>
-    )
+      <div className="project-cont container scroll-area">
+        <h2 className="project-heading">Projects/</h2>
+        <div className="projects">{projectCards}</div>
+      </div>
+    );
 }
 
 export default Project

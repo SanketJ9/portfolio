@@ -1,7 +1,7 @@
 import React, { useRef } from 'react'
 import "./Contact.css"
 import emailjs from "@emailjs/browser"
-import EmailArt from '/public/assets/emailart.png'
+import EmailArt from '/src/assets/emailart.png'
 
 function Contact() {
 
@@ -28,24 +28,49 @@ function Contact() {
 
     //
     return (
-        <div className='contact-cont scroll-area'>
-            <div className="contact-left-section">
-                <h1 className="contact-heading">Contact me/</h1>
-                <form className="form" ref={refForm} onSubmit={sendEmail}>
-                    <div className="form-first-row">
-                        <input type="text" className="input firstrow" name='name' placeholder='Name' id='name' required />
-                        <input type="email" className="input firstrow" name="email" id="email" placeholder='Email' required />
-                    </div>
-                    <input type="text" className="input" name='subject' placeholder='Subject' required />
-                    <textarea name="message" id="message" placeholder='message' required></textarea>
-                    <input type="submit" className='send-btn' value="Send" />
-                </form>
+      <div className="contact-cont container scroll-area">
+        <div className="contact-left-section">
+          <h1 className="contact-heading">Contact me/</h1>
+          <form className="form" ref={refForm} onSubmit={sendEmail}>
+            <div className="form-first-row">
+              <input
+                type="text"
+                className="input firstrow"
+                name="name"
+                placeholder="Name"
+                id="name"
+                required
+              />
+              <input
+                type="email"
+                className="input firstrow"
+                name="email"
+                id="email"
+                placeholder="Email"
+                required
+              />
             </div>
-            <div className="contact-right-section">
-                <img className='email-art' src={EmailArt} alt="" />
-            </div>
+            <input
+              type="text"
+              className="input"
+              name="subject"
+              placeholder="Subject"
+              required
+            />
+            <textarea
+              name="message"
+              id="message"
+              placeholder="message"
+              required
+            ></textarea>
+            <input type="submit" className="send-btn" value="Send" />
+          </form>
         </div>
-    )
+        <div className="contact-right-section">
+          <img className="email-art" src={EmailArt} alt="" />
+        </div>
+      </div>
+    );
 }
 
 export default Contact
