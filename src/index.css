@@ -7,7 +7,7 @@
 :root {
   scrollbar-color: #003f63 #0b171f;
   scrollbar-width: thin;
-  --primary: rgb(0, 204, 255);
+  --primary: #5889cc;
   --dark: #0b171f;
   --mid: #317cad;
   --light: #65bcf7;

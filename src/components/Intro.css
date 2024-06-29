@@ -3,7 +3,7 @@
     max-width: 1280px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     color: var(--white);
 }
@@ -36,24 +36,45 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 320px;
     gap: 20px;
-    justify-content: space-between;
-}
-
-.s-email {
-    font-family: 'Share Tech Mono', monospace;
-    color: var(--white);
-    font-size: 28px;
+    margin-top: 1.6rem;
 }
 
 .s-icons {
     font-size: 40px;
     color: var(--white);
+    cursor: pointer;
 }
 
+.dl-btn{
+    text-decoration: none;
+    font-size: 1.2 rem;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 0.8em 1.4em;
+    border: 3px solid #ffffff;
+    border-radius: 6px;
+}
+
+.dl-btn:hover{
+    background: var(--primary);
+    color: #ffffff;
+    
+}
+
+.s-icons.github:hover{
+    color: #2DBA4E;
+}
+.s-icons.linkedin:hover{
+    color: #0077B5;
+}
+.s-icons.mail:hover{
+    color: #C71610;
+}
+
+
 .intro {
-    width: 60%;
+    width: 50%;
     height: max-content;
     display: flex;
     justify-content: center;
@@ -71,14 +92,20 @@ h1 {
 }
 
 .name {
-    font-size: 72px;
+    font-size: 4.2rem;
     font-family: var(--secondary-font);
     font-weight: bold;
     text-shadow: 2px 2px 10px rgb(0, 0, 0);
 }
 
+.desc{
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
 .role {
-    font-size: 40px;
+    font-size: 2rem;
     font-weight: 600;
     color: var(--grey);
 }
