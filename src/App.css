@@ -6,3 +6,10 @@
     padding-right: 1em;
     color: var(--white);
 }
+
+@media(max-width: 640px) {
+    .container{
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+}

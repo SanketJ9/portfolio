@@ -12,7 +12,7 @@
     scroll-snap-align: start;
 }
 
-.hesocial-cont {
+.social-cont {
     padding: 0 30px;
     background-color: transparent;
     display: flex;
@@ -74,6 +74,8 @@
 
 
 .intro {
+    padding-top: 3em;
+    padding-bottom: 3em;
     width: 50%;
     height: max-content;
     display: flex;
@@ -123,13 +125,21 @@ h1 {
     width: 100%;
 }
 
+@media(min-width: 1440px) {
+    .intro-cont {
+        max-height: 1080px;
+    }
+}
+
 @media(max-width: 768px) {
 
 }
 
 @media(max-width: 640px) {
     .intro-cont{
+        height: 100vb;
         flex-direction: column-reverse;
+        justify-content: space-evenly ;
     }
 
     .intro{
@@ -139,7 +149,6 @@ h1 {
 
     .illust{
         width: 80%;
-        margin-bottom: 2em;
     }
     
 }
