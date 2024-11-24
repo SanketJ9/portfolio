@@ -1,32 +1,17 @@
 .header {
     z-index: 100;
-    height: 8vh;
-    padding: 0 30px;
+    padding: 1em;
     background-color: var(--dark);
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.logo {
-    width: 50px;
+.logo-cont {
+    max-width: 70px;
+
 }
 
-.social {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 320px;
-    justify-content: space-between;
-}
-
-.s-email {
-    font-family: 'Share Tech Mono', monospace;
-    color: var(--white);
-    font-size: 18px;
-}
-
-.s-icons {
-    font-size: 20px;
-    color: var(--white);
+.logo-cont img{
+    width: 100%;
 }

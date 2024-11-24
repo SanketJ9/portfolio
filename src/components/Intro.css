@@ -1,86 +1,38 @@
 .intro-cont {
-    height: 100vh;
-    max-width: 1280px;
+    height: 75vh;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    color: var(--white);
-}
-
-.scroll-area {
-    scroll-snap-align: start;
-}
-
-.hesocial-cont {
-    padding: 0 30px;
-    background-color: transparent;
-    display: flex;
     justify-content: space-between;
+    padding: 2em 1em;
     align-items: center;
-    z-index: 10;
 }
 
-.cover {
-    position: absolute;
-    right: 0;
-    width: 1000px;
-    filter: drop-shadow(0 0 5px rgb(77, 59, 59));
-}
-
-.logo {
-    width: 50px;
-}
-
-.social {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 320px;
-    gap: 20px;
-    justify-content: space-between;
-}
-
-.s-email {
-    font-family: 'Share Tech Mono', monospace;
-    color: var(--white);
-    font-size: 28px;
-}
-
-.s-icons {
-    font-size: 40px;
-    color: var(--white);
+.tech-cont{
+    height: 25vh;
 }
 
 .intro {
-    width: 60%;
+    width: 50%;
     height: max-content;
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
-p,
-h1 {
-    margin: 0;
+.social {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
 }
 
-.greet {
-    font-size: 40px;
-    color: var(--primary);
-}
-
-.name {
-    font-size: 72px;
-    font-family: var(--secondary-font);
-    font-weight: bold;
-    text-shadow: 2px 2px 10px rgb(0, 0, 0);
-}
-
-.role {
-    font-size: 40px;
-    font-weight: 600;
-    color: var(--grey);
+.social-cont {
+    padding: 0 30px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
 }
 
 .illust{
@@ -94,6 +46,11 @@ h1 {
 
 .illust .image-cont img{
     width: 100%;
+}
+
+.tech-cont .tech .tech-icon:hover{
+    color: var(--primary);
+    transition: all 0.3s ease-in-out;
 }
 
 @media(max-width: 768px) {

@@ -67,7 +67,9 @@ function Contact() {
           </form>
         </div>
         <div className="contact-right-section">
-          <img className="email-art" src={EmailArt} alt="" />
+          <div className="image-cont">
+            <img className="email-art" src={EmailArt} alt="" />
+          </div>
         </div>
       </div>
     );

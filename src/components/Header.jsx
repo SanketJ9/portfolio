@@ -1,17 +1,13 @@
-import React from 'react'
 import './Header.css'
-
+import logo from '../assets/sj19.png'
 
 function Header() {
     return (
         <div className='header'>
-            <img className='logo' />
-            <div className="social">
-                <FontAwesomeIcon className='s-icons' icon={faGithub}></FontAwesomeIcon>
-                <FontAwesomeIcon className='s-icons' icon={faLinkedin}></FontAwesomeIcon>
-                {/* <FontAwesomeIcon className='s-icons' icon={faEnvelope}></FontAwesomeIcon> */}
-                <h3 className='s-email'>jadhavsanket621@gmail.com</h3>
+            <div className="logo-cont">
+                <img src={logo} alt="" />
             </div>
+            
         </div>
     )
 }

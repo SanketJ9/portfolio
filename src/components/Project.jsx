@@ -19,9 +19,11 @@ function Project() {
 
 
     return (
-      <div className="project-cont container scroll-area">
-        <h2 className="project-heading">Projects/</h2>
-        <div className="projects">{projectCards}</div>
+      <div className="project-cont container scroll-area pt-12">
+        <div className='project-card'>
+          <h2 className="text-[4vw] font-primary font-bold">PROJECTS</h2>
+        </div>
+        {projectCards}
       </div>
     );
 }

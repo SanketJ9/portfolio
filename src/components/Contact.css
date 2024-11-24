@@ -1,32 +1,35 @@
 .contact-cont {
     position: relative;
     margin: 0 auto;
-    background-color: var(--dark);
     height: 100vh;
     max-width: 1280px;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    color: var(--white);
     font-family: 'Ubuntu', sans-serif;
 }
 
 .contact-left-section {
-    height: 100%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 }
 
 .contact-right-section {
-    width: 50%;
+    width: 40%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+.contact-right-section .image-cont{
+    max-width: 540px;
+    margin: 0 auto;
+}
+
 .email-art {
-    width: 500px;
+    width: 100%;
 }
 
 .scroll-area {
@@ -38,11 +41,12 @@
 }
 
 .form {
-    width: 500px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: left;
+    align-items: center;
+    gap: 0.2rem;
 }
 
 .input {
@@ -60,12 +64,12 @@
 }
 
 .input:focus,
-#message:focus {
+#message:focus,
+.input:focus,
+#message:active{
     outline: none;
     background: var(--primary);
 }
-
-
 
 .form-first-row {
     width: 100%;
