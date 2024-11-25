@@ -36,10 +36,6 @@
     scroll-snap-align: start;
 }
 
-.contact-heading {
-    font-size: 40px;
-}
-
 .form {
     width: 100%;
     display: flex;

@@ -119,5 +119,29 @@ export default [
             }
         ],
         screeshot: "odyssey.png",
+    },
+    {
+        id:3,
+        title: "Odyssey",
+        description: "Music Player with default music library",
+        tech: "HTML CSS javaScript ",
+        techs: [{
+            techid : 1,
+            name: "HTML"
+            },
+            {
+            techid : 2,
+            name: "CSS"
+            },
+            {
+            techid : 3,
+            name: "JavaScript"
+            },
+            {
+            techid : 4,
+            name: "ReactJS"
+            }
+        ],
+        screeshot: "odyssey.png",
     }
 ]

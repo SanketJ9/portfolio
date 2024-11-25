@@ -3,8 +3,11 @@ import './App.css'
 import Intro from './components/Intro'
 import Project from './components/Project'
 import Contact from './components/Contact'
+import LocomotiveScroll from 'locomotive-scroll';
 
 function App() {
+
+  const locomotiveScroll = new LocomotiveScroll();
 
   return (
     <div className="App" >

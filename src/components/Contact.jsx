@@ -28,9 +28,9 @@ function Contact() {
 
     //
     return (
-      <div className="contact-cont container scroll-area">
+      <div data-scroll data-scroll-speed="-.2" className="contact-cont container scroll-area z-7">
         <div className="contact-left-section">
-          <h1 className="contact-heading">Contact me/</h1>
+          <h1 className="contact-heading text-7xl font-bold">Contact</h1>
           <form className="form" ref={refForm} onSubmit={sendEmail}>
             <div className="form-first-row">
               <input

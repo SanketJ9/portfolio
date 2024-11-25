@@ -2,6 +2,7 @@ import React from 'react'
 import "./Project.css"
 import ProjectCard from './ProjectCard'
 import data from "../data"
+import portFolioText from '../assets/portfoliotxt.png'
 
 function Project() {
 
@@ -19,11 +20,17 @@ function Project() {
 
 
     return (
-      <div className="project-cont container scroll-area pt-12">
-        <div className='project-card'>
-          <h2 className="text-[4vw] font-primary font-bold">PROJECTS</h2>
+      <div data-scroll data-scroll-speed=".2" className="container py-16 bg-white z-10">
+        <div className='heading-cont w-[90%] mx-auto'>
+          <img src={portFolioText} alt="" />
         </div>
-        {projectCards}
+        <div className='project-cont py-5 mt-[-6em]'>
+          {/* <div className='project-card flex flex-col align-middle justify-center'>
+            <h2 className="text-[4vw] font-primary font-bold">PROJECTS</h2>
+          </div> */}
+          {projectCards}
+        </div>
+        
       </div>
     );
 }
