@@ -4,13 +4,14 @@
     height: 100vh;
     max-width: 1280px;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     flex-direction: row;
     font-family: 'Ubuntu', sans-serif;
 }
 
 .contact-left-section {
-    width: 40%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -41,7 +42,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
     gap: 0.2rem;
 }
 
@@ -53,9 +53,9 @@
     height: 50px;
     border: none;
     border-radius: 2px;
-    font-size: 18px;
-    color: white;
-    font-weight: 500;
+    font-size: 16px;
+    color: var(--primary);
+    font-weight: bold;
     border-radius: 4px;
 }
 
@@ -63,6 +63,7 @@
 #message:focus,
 .input:focus,
 #message:active{
+    color: #ffffff;
     outline: none;
     background: var(--primary);
 }
@@ -73,9 +74,7 @@
     gap: 10px;
 }
 
-#name {
-    width: 350px;
-}
+
 
 #message {
     padding: 10px 10px;
@@ -93,17 +92,6 @@
 }
 
 .send-btn {
-    font-size: 18px;
-    border: none;
-    background-color: var(--primary);
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 600;
-    color: var(--white);
-    border-radius: 4px;
-    margin: 5px 0;
-    height: 40px;
-    width: 100px;
-    align-self: self-end;
 }
 
 .send-btn:active {
@@ -117,3 +105,32 @@
     font-family: 'Ubuntu', sans-serif;
     color: var(--white);
 }
+
+
+@media(max-width: 768px) {
+
+}
+
+@media(max-width: 640px) {
+    .contact-cont{
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+    }
+
+    .contact-left-section{
+        width: 100%;
+    }
+
+    .form-first-row{
+        display: block;
+    }
+
+    .contact-right-section{
+        width: 70%;
+    }
+}
+
+@media(max-width: 480px) {
+
+}
+

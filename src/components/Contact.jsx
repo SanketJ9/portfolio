@@ -30,7 +30,7 @@ function Contact() {
     return (
       <div data-scroll data-scroll-speed="-.2" className="contact-cont container scroll-area z-7">
         <div className="contact-left-section">
-          <h1 className="contact-heading text-7xl font-bold">Contact</h1>
+          <h1 className="contact-heading text-primary text-[3rem] md:text-[3.5rem] lg:text-[4rem] xl:text-[5rem] text-center md:text-left pb-6 font-extrabold leading-none">CONTACT</h1>
           <form className="form" ref={refForm} onSubmit={sendEmail}>
             <div className="form-first-row">
               <input
@@ -63,7 +63,9 @@ function Contact() {
               placeholder="message"
               required
             ></textarea>
-            <input type="submit" className="send-btn" value="Send" />
+            <div className=''>
+              <input type="submit" className="send-btn block w-[100%] ml-auto text-primary hover:text-white border border-3 fomt-bold border-primary hover:bg-primary focus:ring-4 focus:outline-none focus:ring-blue-300 font-bold rounded-lg text-[1rem] px-5 py-3 text-center dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:focus:ring-blue-800" value="Send" />
+            </div>
           </form>
         </div>
         <div className="contact-right-section">

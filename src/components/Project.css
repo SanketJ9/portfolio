@@ -6,3 +6,22 @@
 
 .project-card {
 }
+
+
+
+@media(max-width: 768px) {
+    .project-cont {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2em;
+    }
+
+}
+
+@media(max-width: 640px) {
+    
+}
+
+@media(max-width: 480px) {
+
+}

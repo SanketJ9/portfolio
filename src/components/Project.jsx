@@ -20,11 +20,11 @@ function Project() {
 
 
     return (
-      <div data-scroll data-scroll-speed=".2" className="container py-16 bg-white z-10">
-        <div className='heading-cont w-[90%] mx-auto'>
+      <div data-scroll data-scroll-speed=".2" className="container py-8 md:pd-16 bg-white z-10">
+        <div className='heading-cont w-[100%] md:w-[90%] mx-auto'>
           <img src={portFolioText} alt="" />
         </div>
-        <div className='project-cont py-5 mt-[-6em]'>
+        <div className='project-cont py-5 mt-[0.75em] md:mt-[-3em] lg:mt-[-4em] xl:mt-[-5em]'>
           {/* <div className='project-card flex flex-col align-middle justify-center'>
             <h2 className="text-[4vw] font-primary font-bold">PROJECTS</h2>
           </div> */}
