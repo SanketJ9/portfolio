@@ -43,7 +43,7 @@ function Intro() {
 
             <div className="social">
               <div className="dl-btn">
-                <a href="#" className="max-w-[280px] block text-primary hover:text-white border border-3 fomt-bold border-primary hover:bg-primary focus:ring-4 focus:outline-none focus:ring-blue-300 font-bold rounded-lg text-[1rem] px-5 py-3 text-center me-2 mb-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:focus:ring-blue-800">Download Resume</a>
+                <a href="#" className="max-w-[280px] block text-primary hover:text-white border border-3 fomt-bold border-primary hover:bg-primary focus:ring-4 focus:outline-none focus:ring-blue-300 font-bold rounded-lg text-[1rem] px-5 py-3 text-center me-2 mb-2">Download Resume</a>
 
               </div>
               <FontAwesomeIcon
