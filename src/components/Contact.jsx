@@ -3,6 +3,11 @@ import "./Contact.css"
 import emailjs from "@emailjs/browser"
 import EmailArt from '/src/assets/emailart.png'
 
+
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { SiGmail } from "react-icons/si";
+
 function Contact() {
 
     const refForm = useRef(null)
@@ -30,7 +35,18 @@ function Contact() {
     return (
       <div data-scroll data-scroll-speed="-.2" className="contact-cont container scroll-area z-7">
         <div className="contact-left-section">
-          <h1 className="contact-heading text-primary text-[3rem] md:text-[3.5rem] lg:text-[4rem] xl:text-[5rem] text-center md:text-left pb-6 font-extrabold leading-none">CONTACT</h1>
+          <h1 className="contact-heading text-primary text-[3rem] md:text-[3.5rem] lg:text-[4rem] xl:text-[5rem] text-center md:text-left pb-4 py-6 font-extrabold leading-none">CONNECT</h1>
+          <div className="social pb-8">
+              <a href="https://github.com/SanketJ9" target="blank">
+                <FaGithub className="text-5xl mg:text-6xl p-1 bg-white hover:bg-primary active:bg-primary rounded-md s-icons icons text-primary hover:text-white active:text-white cursor-pointer transitions"/>
+              </a>
+              <a href="https://www.linkedin.com/in/sanketjadhav19" target="blank">
+                <FaLinkedin className="text-5xl mg:text-6xl p-1 bg-white hover:bg-primary active:bg-primary rounded-md s-icons icons text-primary hover:text-white active:text-white cursor-pointer transitions"/>
+              </a>
+              <a href="mailto:jadhavsanket621@gmail.com" target="blank">
+                <SiGmail className="text-5xl mg:text-6xl p-1 bg-white hover:bg-primary active:bg-primary rounded-md s-icons icons text-primary hover:text-white active:text-white cursor-pointer transitions"/> 
+              </a>
+            </div>
           <form className="form" ref={refForm} onSubmit={sendEmail}>
             <div className="form-first-row">
               <input

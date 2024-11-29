@@ -48,15 +48,15 @@ function Intro() {
               <div className="dl-btn">
                 <a href="#" className="max-w-[280px] block text-primary hover:text-white border border-3 fomt-bold border-primary hover:bg-primary focus:ring-4 focus:outline-none focus:ring-blue-300 font-bold rounded-lg text-[1rem] px-5 py-3 text-center ">Download Resume</a>
               </div>
-              <div>
+              <a href="https://github.com/SanketJ9" target="blank">
                 <FaGithub className="text-5xl mg:text-6xl p-1 bg-white hover:bg-primary active:bg-primary rounded-md s-icons icons text-primary hover:text-white active:text-white cursor-pointer transitions"/>
-              </div>
-              <div>
+              </a>
+              <a href="https://www.linkedin.com/in/sanketjadhav19" target="blank">
                 <FaLinkedin className="text-5xl mg:text-6xl p-1 bg-white hover:bg-primary active:bg-primary rounded-md s-icons icons text-primary hover:text-white active:text-white cursor-pointer transitions"/>
-              </div>
-              <div>
+              </a>
+              <a href="mailto:jadhavsanket621@gmail.com" target="blank">
                 <SiGmail className="text-5xl mg:text-6xl p-1 bg-white hover:bg-primary active:bg-primary rounded-md s-icons icons text-primary hover:text-white active:text-white cursor-pointer transitions"/> 
-              </div>
+              </a>
             </div>
           </div>
           <div className="illust">
