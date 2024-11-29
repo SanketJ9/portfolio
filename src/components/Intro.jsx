@@ -2,7 +2,10 @@ import "../index.css"
 import "./Intro.css"
 import illus from "/src/assets/ilus.svg"
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { SiGmail } from "react-icons/si";
+
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 import { TbMailFilled } from "react-icons/tb";
 import { BiSolidFileHtml } from "react-icons/bi";
@@ -38,24 +41,22 @@ function Intro() {
               <p className="text-[1.5rem] md:text-[1.5rem] lg:text-[2rem] xl:text-[2.5rem] text-center md:text-left text-gray-500 font-bold pb-3 leading-none">Front-End Developer</p>
             </div>
             <div className="desc">
-              <p className="text-[1rem] md:text-[1.15rem] lg:text-[1.25rem] xl:text-[1.5rem] text-justify text-dark pb-8">a passionate and dedicated front-end developer with 3 years of experience in crafting beautiful and functional websites and web applications.</p>
+              <p className="text-[1rem] md:text-[1.15rem] lg:text-[1.2rem] xl:text-[1.25rem] text-justify text-dark pb-8">a passionate and dedicated front-end developer with 3 years of experience in crafting beautiful and functional websites and web applications.</p>
             </div>
 
             <div className="social">
               <div className="dl-btn">
-                <a href="#" className="max-w-[280px] block text-primary hover:text-white border border-3 fomt-bold border-primary hover:bg-primary focus:ring-4 focus:outline-none focus:ring-blue-300 font-bold rounded-lg text-[1rem] px-5 py-3 text-center me-2 mb-2">Download Resume</a>
-
+                <a href="#" className="max-w-[280px] block text-primary hover:text-white border border-3 fomt-bold border-primary hover:bg-primary focus:ring-4 focus:outline-none focus:ring-blue-300 font-bold rounded-lg text-[1rem] px-5 py-3 text-center ">Download Resume</a>
               </div>
-              <FontAwesomeIcon
-                className="text-5xl mg:text-5xl s-icons icons text-primary cursor-pointer"
-                icon={faGithub}
-              ></FontAwesomeIcon>
-              <FontAwesomeIcon
-                className="text-5xl mg:text-5xl s-icons icons cursor-pointer text-primary"
-                icon={faLinkedin}
-              ></FontAwesomeIcon>
-              {/* <h3 className="s-email icons">jadhavsanket621@gmail.com</h3> */}
-              <TbMailFilled className="text-5xl mg:text-5xl s-icons icons text-primary cursor-pointer"/> 
+              <div>
+                <FaGithub className="text-5xl mg:text-6xl p-1 bg-white hover:bg-primary active:bg-primary rounded-md s-icons icons text-primary hover:text-white active:text-white cursor-pointer transitions"/>
+              </div>
+              <div>
+                <FaLinkedin className="text-5xl mg:text-6xl p-1 bg-white hover:bg-primary active:bg-primary rounded-md s-icons icons text-primary hover:text-white active:text-white cursor-pointer transitions"/>
+              </div>
+              <div>
+                <SiGmail className="text-5xl mg:text-6xl p-1 bg-white hover:bg-primary active:bg-primary rounded-md s-icons icons text-primary hover:text-white active:text-white cursor-pointer transitions"/> 
+              </div>
             </div>
           </div>
           <div className="illust">

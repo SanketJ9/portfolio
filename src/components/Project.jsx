@@ -13,7 +13,7 @@ function Project() {
                 img={item.screeshot}
                 title={item.title}
                 desc={item.description}
-                tech={item.tech}
+                url={item.url}
                 techss={item.techss}
             />
         )

@@ -7,19 +7,21 @@ function ProjectCard(props) {
 
     return (
         <div className='project-card p-3 bg-gray-100 border-2 border-gray-200 rounded-[1em]'>
-            <div className="project-details">
-                <h2 className="project-title text-3xl font-primary font-bold pb-1">{props.title}</h2>
-                <h3 className="project-desc text-gray-800 text-1xl pb-3">{props.desc}</h3>
-                <div className='project-techs flex flex-row gap-1 pb-4'>
-            {props.techss.map((tech, techIndex) => (
-              <p className='py-1 px-2 bg-gray-300 rounded-[4px] text-sm font-bold text-gray-700' key={techIndex}>{tech}</p>
-            ))}
-          </div>
-                
+            <a href={props.url} target="_blank">
+                <div className="project-details">
+                    <h2 className="project-title text-3xl font-primary font-bold pb-1">{props.title}</h2>
+                    <h3 className="project-desc text-gray-800 text-1xl pb-3">{props.desc}</h3>
+                    <div className='project-techs flex flex-row gap-1 pb-4'>
+                {props.techss.map((tech, techIndex) => (
+                <p className='py-1 px-2 bg-gray-300 rounded-[4px] text-sm font-bold text-gray-700' key={techIndex}>{tech}</p>
+                ))}
             </div>
-            <div className='project-ss rounded-[0.4em] overflow-hidden'>
-                <img className='project-ss-img' src={`./src/assets/${props.img}`} alt="ScreenShot" />
-            </div>
+                    
+                </div>
+                <div className='project-ss rounded-[0.4em] overflow-hidden'>
+                    <img className='project-ss-img' src={`./src/assets/${props.img}`} alt="ScreenShot" />
+                </div>
+            </a>
         </div>
     )
 }
