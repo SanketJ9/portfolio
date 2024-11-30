@@ -18,7 +18,7 @@ function ProjectCard(props) {
                     </div>
                 </div>
                 <div className='project-ss rounded-[0.4em] overflow-hidden'>
-                    <img className='project-ss-img' src={`./src/assets/${props.img}`} alt="ScreenShot" />
+                    <img className='project-ss-img' src={`/src/assets/${props.img}`} alt="ScreenShot" />
                 </div>
             </a>
         </div>
