@@ -1,7 +1,7 @@
 import React, { useRef } from 'react'
 import "./Contact.css"
 import emailjs from "@emailjs/browser"
-import EmailArt from '/src/assets/connect.svg'
+import EmailArt from '/connect.svg'
 
 
 import { FaGithub } from "react-icons/fa";

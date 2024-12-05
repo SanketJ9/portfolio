@@ -1,6 +1,6 @@
 import "../index.css"
 import "./Intro.css"
-import illus from "/src/assets/ilus.svg"
+import illus from "/ilus.svg"
 
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
