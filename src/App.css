@@ -8,3 +8,28 @@
 
 /* Responsive */
 
+/* intro SVG Animations */
+
+@keyframes updown {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+@-moz-keyframes updown {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    A100% { opacity: 0; }
+}
+
+@-webkit-keyframes updown {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+@-o-keyframes updown {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
