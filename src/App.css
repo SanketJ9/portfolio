@@ -5,6 +5,10 @@
     padding-right: 1em;
 }
 
+.App{
+    z-index: 3;
+}
+
 
 /* Responsive */
 
@@ -19,7 +23,7 @@
 @-moz-keyframes updown {
     0% { opacity: 0; }
     50% { opacity: 1; }
-    A100% { opacity: 0; }
+    100% { opacity: 0; }
 }
 
 @-webkit-keyframes updown {

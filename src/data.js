@@ -4,7 +4,7 @@ export default [
         title: "filmflex",
         description: "Netflix Clone built using React,TMDB Api and Firebase",
         techss: ["React","TMDB API","Firebase","Axios","Redux"],
-        screeshot: "filmflex.png",
+        screeshot: "filmflex.jpg",
         url: "https://filmflex-react.web.app/"
     },
     {
@@ -12,7 +12,7 @@ export default [
         title: "COSMOS",
         description: "COSMOS showcases astronomical data using NASA's Open API",
         techss: ["React","NASA APIs","Axios"],
-        screeshot: "cosmos.png",
+        screeshot: "cosmos.jpg",
         url: "https://cosmos-sj.netlify.app/"
     },
     {
@@ -20,7 +20,7 @@ export default [
         title: "pAInt",
         description: "React app using the OpenAI API to generate images from user prompts.",
         techss: ["React","OpenAI API",],
-        screeshot: "paint.png",
+        screeshot: "paint.jpg",
         url: "https://paint-reactig.netlify.app/"
     },
     {
@@ -28,7 +28,7 @@ export default [
         title: "Notebook",
         description: "Google Docs clone with Socket.IO for real-time collaboration.",
         techss: ["React","Socket.io","Quill Editor"],
-        screeshot: "notebook.png",
+        screeshot: "notebook.jpg",
         url: "https://notebook-react.netlify.app/"
     }
     
