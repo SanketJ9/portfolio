@@ -9,13 +9,19 @@ function Preloader() {
     useEffect(()=>{
         preLoaderAnim();
 
-        const count = setInterval
+        const count = setInterval(()=>{
+            setCounter(
+                (counter) => (
+                    counter < 100 ? counter+1 : clearInterval(count),setCounter(100) 
+                )
+            )
+        },1000)
     },[])
 
   return (
     <div className='preloader'>
         <div className='texts-container'>
-            <span>100%</span>
+            <p className='text-8xl leading-none font-bold'>SANKET<br/>JADHAV</p>
         </div>
     </div>
   )

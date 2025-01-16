@@ -25,3 +25,8 @@
     overflow: hidden;
     color: #ffffff;
 }
+
+.preloader .text-container p{
+    font-size: 200px;
+}
+
