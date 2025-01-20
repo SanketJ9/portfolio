@@ -21,7 +21,9 @@ function Preloader() {
   return (
     <div className='preloader'>
         <div className='texts-container'>
-            <p className='text-8xl leading-none font-bold'>SANKET<br/>JADHAV</p>
+            <p className='text-8xl leading-none font-bold text-center'>SANKET<br/>JADHAV</p>
+            <br/>
+            <p className='text-3xl leading-none font-bold text-center'>Front-End Developer</p>
         </div>
     </div>
   )

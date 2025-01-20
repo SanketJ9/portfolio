@@ -91,9 +91,6 @@
     border-radius: 4px;
 }
 
-.send-btn {
-}
-
 .send-btn:active {
     background-color: var(--mid);
     color: var(--white);
