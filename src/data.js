@@ -17,11 +17,11 @@ export default [
     },
     {
         id:3,
-        title: "pAInt",
-        description: "React app using the OpenAI API to generate images from user prompts.",
-        techss: ["React","OpenAI API",],
+        title: "Imaigen",
+        description: "React app using the Gemini imagen to generate images from user prompts.",
+        techss: ["React","Gemini API",],
         screeshot: "paint.jpg",
-        url: "https://paint-reactig.netlify.app/"
+        url: "https://imaigen.vercel.app/"
     },
     {
         id:4,

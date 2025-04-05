@@ -22,7 +22,7 @@ export default {
         '4': '4px',
       },
       fontFamily: {
-        'heading': '"Oswald", sans-serif;',
+        'heading': '"Playfair Display", serif;',
         'body': '"Source Code Pro", serif;'
         
       }
