@@ -22,7 +22,7 @@ export default {
         '4': '4px',
       },
       fontFamily: {
-        'heading': '"Playfair Display", serif;',
+        'heading': '"Montserrat", sans-serif;',
         'body': '"Source Code Pro", serif;'
         
       }

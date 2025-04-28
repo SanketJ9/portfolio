@@ -6,8 +6,6 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 
-import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
-import { TbMailFilled } from "react-icons/tb";
 import { BiSolidFileHtml } from "react-icons/bi";
 import { SiCsswizardry } from "react-icons/si";
 import { SiJavascript,SiNextdotjs } from "react-icons/si";

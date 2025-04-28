@@ -1,11 +1,11 @@
 export default [
     {
         id:1,
-        title: "filmflex",
-        description: "Netflix Clone built using React,TMDB Api and Firebase",
-        techss: ["React","TMDB API","Firebase","Axios","Redux"],
-        screeshot: "filmflex.jpg",
-        url: "https://filmflex-react.web.app/"
+        title: "bingeWhat?",
+        description: "NextJS app using TMDB API to find movies and shows.",
+        techss: ["NextJS","TMDB API","Youtube Data API","Redux"],
+        screeshot: "bingewhat.png",
+        url: "https://bingewhat.vercel.app/"
     },
     {
         id:2,
@@ -30,6 +30,13 @@ export default [
         techss: ["React","Socket.io","Quill Editor"],
         screeshot: "notebook.jpg",
         url: "https://notebook-react.netlify.app/"
-    }
-    
+    },
+    {
+        id:5,
+        title: "filmflex",
+        description: "Netflix Clone built using React,TMDB Api and Firebase",
+        techss: ["React","TMDB API","Firebase","Axios","Redux"],
+        screeshot: "filmflex.jpg",
+        url: "https://filmflex-react.web.app/"
+    },
 ]
