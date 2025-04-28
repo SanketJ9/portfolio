@@ -33,7 +33,7 @@ function Intro() {
         <div className="intro-cont ">
           <div className="intro">
             <div className="name">
-              <p className="text-[2.5rem] md:text-[3.5rem] lg:text-[4rem] xl:text-[5rem] text-center md:text-left font-bold text-primary font-heading pb-3 leading-none">SANKET JADHAV</p>
+              <p className="text-[2.5rem] md:text-[3.5rem] lg:text-[4rem] xl:text-[5rem] text-center md:text-left font-extrabold text-primary font-heading pb-3 leading-none">SANKET JADHAV</p>
             </div>
             <div className="role">
               <p className="text-[1.5rem] md:text-[1.5rem] lg:text-[2rem] xl:text-[2.5rem] text-center md:text-left text-gray-500 font-bold pb-3 leading-none">Front-End Developer</p>
