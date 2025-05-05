@@ -29,7 +29,7 @@ export default [
         description: "Google Docs clone with Socket.IO for real-time collaboration.",
         techss: ["React","Socket.io","Quill Editor"],
         screeshot: "notebook.jpg",
-        url: "https://notebook-react.netlify.app/"
+        url: "https://notebook-steel.vercel.app/"
     },
     {
         id:5,
