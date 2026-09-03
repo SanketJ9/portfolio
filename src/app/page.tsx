@@ -1,7 +1,9 @@
 'use client';
 
 import { useEffect } from 'react';
-import Intro from '@/components/Intro';
+import dynamic from 'next/dynamic';
+
+const Intro = dynamic(() => import('@/components/Intro'), { ssr: false });
 import Project from '@/components/Project';
 import Contact from '@/components/Contact';
 import Preloader from '../components/Preloader';
