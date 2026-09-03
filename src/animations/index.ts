@@ -12,26 +12,6 @@ export const preLoaderAnim = () => {
       duration: 0.05,
       css: { overflowY: "hidden", height: "100vh" },
     })
-    .to(".texts-container", {
-      duration: 0,
-      opacity: 1,
-      ease: "Power3.easeOut",
-    })
-    .from(".texts-container span", {
-      duration: 1.5,
-      delay: 1,
-      y: 70,
-      skewY: 10,
-      stagger: 0.4,
-      ease: "Power3.easeOut",
-    })
-    .to(".texts-container span", {
-      duration: 1,
-      y: 70,
-      skewY: -20,
-      stagger: 0.2,
-      ease: "Power3.easeOut",
-    })
     .to(".landing", {
       duration: 0.05,
       css: { overflowY: "hidden", height: "unset" },
@@ -55,7 +35,7 @@ export const preLoaderAnim = () => {
         ease: "Power3.easeOut",
         onComplete: mobileLanding, // Note: Removed () so it runs at completion, not immediately
       },
-      "-=2"
+      "-=0.5"
     )
     .from(".landing__main .text", {
       duration: 2,

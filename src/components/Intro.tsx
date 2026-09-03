@@ -2,7 +2,6 @@
 
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
-import TechStack from "./TechStack";
 import { Canvas, useLoader, useFrame } from '@react-three/fiber';
 import { TextureLoader, NearestFilter } from 'three';
 import { Suspense, useRef, useEffect, useMemo } from 'react';
@@ -128,8 +127,6 @@ export default function Intro() {
           </div>
         </div>
       </div>
-      
-      <TechStack />
     </>
   );
 }

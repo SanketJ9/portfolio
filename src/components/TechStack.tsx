@@ -8,8 +8,8 @@ import { RiTailwindCssFill } from "react-icons/ri";
 export default function TechStack() {
   return (
     <div 
-      data-scroll 
-      data-scroll-speed=".2" 
+      data-scroll="true" 
+      data-scroll-speed="0.2" 
       className="tech-cont container relative z-10 bg-white before:absolute before:-top-40 before:left-0 before:h-40 before:w-full before:rounded-2xl before:bg-gradient-to-b before:from-white/10 before:to-white before:backdrop-blur-md before:[mask-image:linear-gradient(to_bottom,transparent,black_50%)] before:[-webkit-mask-image:linear-gradient(to_bottom,transparent,black_50%)] mb-10 min-h-[80vh] sm:min-h-[25vh] flex flex-col gap-10"
     >
       <div className="heading">
