@@ -9,6 +9,7 @@
   --color-grey: var(--grey);
   --font-primary: var(--primary-font);
   --font-secondary: var(--secondary-font);
+  --font-gugi: var(--font-gugi);
 }
 
 * {
@@ -20,7 +21,7 @@
 :root {
   scrollbar-color: #b4b4b4 #ffffff00;
   scrollbar-width: thin;
-  --primary: #133E87;
+  --primary: #111111;
   --dark: #0b171f;
   --mid: #ececec;
   --mid-grey: #0c2d40;
