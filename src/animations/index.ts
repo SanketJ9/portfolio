@@ -33,7 +33,10 @@ export const preLoaderAnim = () => {
         duration: 1.5,
         height: "0vh",
         ease: "Power3.easeOut",
-        onComplete: mobileLanding, // Note: Removed () so it runs at completion, not immediately
+        onComplete: () => {
+          mobileLanding();
+          window.dispatchEvent(new CustomEvent("preloaderComplete"));
+        },
       },
       "-=0.5"
     )

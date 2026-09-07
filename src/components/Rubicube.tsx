@@ -1,16 +1,13 @@
 "use client";
 
-import { useRef, useMemo } from "react";
-import { useFrame } from "@react-three/fiber";
+import { useMemo } from "react";
 import * as THREE from "three";
-import { RoundedBox, Edges, OrbitControls } from "@react-three/drei";
+import { RoundedBox, Edges } from "@react-three/drei";
 
 export default function RubiksCube() {
-  const groupRef = useRef<THREE.Group>(null);
-
 
     // The 6 sticker colors (we don't need MeshStandardMaterial here, just the hex colors)
-    const stickerColors = ["#ff0000", "#ff8800", "#ffffff", "#d7b611", "#18b818", "#1f5ef2"];
+    const stickerColors = ["#ff0000", "#ff8800", "#ffffff", "#ffcc00", "#18b818", "#1f5ef2"];
 
     const spacing = 1.01;
     
@@ -30,7 +27,7 @@ export default function RubiksCube() {
     }, []);
 
     return (
-        <group ref={groupRef} scale={[0.8, 0.8, 0.8]}>
+        <group scale={[0.8, 0.8, 0.8]}>
         {cubies.map(({ position, key }) => (
             // The Black Plastic Core
             <group key={key} position={position}>

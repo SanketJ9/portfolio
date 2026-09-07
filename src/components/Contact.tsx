@@ -76,7 +76,7 @@ export default function Contact() {
       
       <div className="contact-right-section flex w-[70%] items-center justify-center sm:w-[40%]">
         <div className="image-cont mx-auto w-full sm:w-[540px]">
-          <img className="email-art w-full" src="/connect.svg" alt="Connect" />
+          {/* <img className="email-art w-full" src="/connect.svg" alt="Connect" /> */}
         </div>
       </div>
     </div>

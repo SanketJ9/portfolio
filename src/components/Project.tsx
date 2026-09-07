@@ -21,7 +21,7 @@ export default function Project() {
     <div 
       data-scroll 
       data-scroll-speed=".1" 
-      className="pro relative container z-10 bg-white py-8 md:py-16 before:absolute before:-top-30 before:left-0 before:h-30 before:w-full before:rounded-2xl before:bg-gradient-to-b before:from-white/10 before:to-white before:backdrop-blur-md before:[mask-image:linear-gradient(to_bottom,transparent,black_50%)] before:[-webkit-mask-image:linear-gradient(to_bottom,transparent,black_50%)]"
+      className="pro relative container py-8 md:py-16 "
     >
       <div className='heading-cont mx-auto w-[100%] md:w-[90%]'>
         <img src="/portfoliotxt.png" alt="Projects" />
