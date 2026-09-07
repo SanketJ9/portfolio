@@ -33,9 +33,11 @@ export const preLoaderAnim = () => {
         duration: 1.5,
         height: "0vh",
         ease: "Power3.easeOut",
+        onStart: () => {
+          window.dispatchEvent(new CustomEvent("preloaderComplete"));
+        },
         onComplete: () => {
           mobileLanding();
-          window.dispatchEvent(new CustomEvent("preloaderComplete"));
         },
       },
       "-=0.5"

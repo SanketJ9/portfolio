@@ -16,7 +16,7 @@ export default function CubeController({ scrollProgressRef }: CubeControllerProp
   // State for preloader transition
   const [isPreloader, setIsPreloader] = useState(true);
   const positionRef = useRef(new THREE.Vector3(0, 0, 0));
-  const scaleRef = useRef(1.0);
+  const scaleRef = useRef(0.8);
 
   // State for interaction
   const [isHovered, setIsHovered] = useState(false);
@@ -44,8 +44,9 @@ export default function CubeController({ scrollProgressRef }: CubeControllerProp
       // Define keyframes [progress, x, y, z, scale]
       const keyframes = [
         { p: 0.0, pos: new THREE.Vector3(2,0, 0), scale: 0.6 },
-        { p: 0.25, pos: new THREE.Vector3(-2, 0, 0), scale: 0.4},
-        { p: 0.5, pos: new THREE.Vector3(2, -1, 0), scale: 0.4 },
+        { p: 0.30, pos: new THREE.Vector3(-2, 0, 0), scale: 0.4},
+        { p: 0.50, pos: new THREE.Vector3(-2, 0, 0), scale: 0.4},
+        { p: 0.70, pos: new THREE.Vector3(2, -1, 0), scale: 0.4 },
         { p: 1.0, pos: new THREE.Vector3(2, 0, 0), scale: 0.6 },
       ];
 

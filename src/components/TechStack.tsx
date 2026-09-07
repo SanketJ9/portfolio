@@ -7,10 +7,12 @@ import { RiTailwindCssFill } from "react-icons/ri";
 
 export default function TechStack() {
   return (
-    <div data-scroll="true" data-scroll-speed="0.2" className="mb-10">
-      <div 
-        className="tech-cont container relative bg-white/10 rounded-3xl shadow-[0_4px_30px_rgba(0,0,0,0.1)] backdrop-blur-md border border-white/10  min-h-[80vh] sm:min-h-[25vh] flex flex-col gap-10 overflow-visible p-16"
-      >
+    <div 
+      data-scroll="true" 
+      data-scroll-speed="0.2" 
+      className="tech-cont container relative mb-10 bg-white/10 rounded-3xl shadow-[0_4px_30px_rgba(0,0,0,0.1)] backdrop-blur-md border border-white/10 min-h-[80vh] sm:min-h-[25vh] flex flex-col gap-10 overflow-visible p-16"
+      style={{ willChange: "transform" }}
+    >
         <div className="heading">
           <p className="text-[2.5rem] md:text-[3.5rem] lg:text-[4rem] xl:text-[5rem] text-center md:text-center font-bold font-primary text-primary font-heading pb-8 leading-none">What's in My Stack</p>
         </div>
@@ -38,6 +40,5 @@ export default function TechStack() {
           <div className="tech flex flex-col items-center gap-1"><SiTanstack className="tech-icon cursor-pointer text-4xl lg:text-7xl transition-all duration-300 ease-in-out text-[#FF4154]"/><p className="text-sm lg:text-lg font-medium">TanStack</p></div>
         </div>
       </div>
-    </div>
   );
 }

@@ -40,7 +40,7 @@ export default function Preloader() {
 
       <div className='absolute bottom-10 right-10 flex items-baseline justify-end'>
         <span 
-          className='text-8xl md:text-9xl font-bold'
+          className='text-8xl md:text-[20rem] font-bold'
           style={{ 
             opacity: counter === 100 ? 0 : 1,
             transition: 'opacity 0.5s ease-out'
