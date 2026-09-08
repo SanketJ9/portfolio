@@ -45,8 +45,13 @@ export default function Home() {
       <GlobalCanvas scrollProgressRef={scrollProgressRef} />
       <main className="App">
         <Intro />
-        <TechStack />
-        <Project />
+        <div data-scroll="true" data-scroll-speed="-0.15" style={{ willChange: "transform" }}>
+          <TechStack />
+        </div>
+        <div className="w-full h-[20vh]"></div>
+        <div data-scroll="true" data-scroll-speed="0.1" style={{ willChange: "transform" }}>
+          <Project />
+        </div>
         <Contact />
       </main>
     </>
