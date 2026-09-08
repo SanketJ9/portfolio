@@ -45,8 +45,8 @@ export default function CubeController({ scrollProgressRef }: CubeControllerProp
       const keyframes = [
         { p: 0.0, pos: new THREE.Vector3(2,0, 0), scale: 0.6 },
         { p: 0.30, pos: new THREE.Vector3(-2, 0, 0), scale: 0.4},
-        { p: 0.50, pos: new THREE.Vector3(-2, 0, 0), scale: 0.4},
-        { p: 0.70, pos: new THREE.Vector3(2, -1, 0), scale: 0.4 },
+        { p: 0.50, pos: new THREE.Vector3(-2.5, 0, 0), scale: 0.4},
+        { p: 0.70, pos: new THREE.Vector3(-2.5, -1, 0), scale: 0.4 },
         { p: 1.0, pos: new THREE.Vector3(2, 0, 0), scale: 0.6 },
       ];
 

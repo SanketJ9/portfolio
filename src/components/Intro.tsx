@@ -73,7 +73,7 @@ export default function Intro() {
         <div className="intro-cont z-0 relative flex min-h-[100svh] flex-col-reverse items-center justify-evenry md:justify-start sm:flex-row sm:justify-between">
           <div className="intro relative z-0 flex h-max w-full flex-col mb-12 justify-center sm:w-1/2 select-none pointer-events-none">
             <div className="name">
-              <p ref={nameRef} style={{ visibility: "hidden" }} className="text-[2.5rem] md:text-[3rem] lg:text-[3.5rem] xl:text-[4rem] text-center md:text-left font-bold text-primary font-primary pb-3 leading-none">SANKET JADHAV</p>
+              <p ref={nameRef} style={{ visibility: "hidden" }} className="text-[2.5rem] md:text-[3rem] lg:text-[3.5rem] xl:text-[4rem] text-center md:text-left font-bold text-primary font-boldonse pb-5 leading-none">SANKET JADHAV</p>
             </div>
             <div className="role" style={{ visibility: "hidden" }}>
               <p className="text-[1.5rem] md:text-[1.5rem] lg:text-[2rem] xl:text-[2.5rem] text-center md:text-left text-gray-500 font-bold pb-3 leading-none">Software Engineer</p>

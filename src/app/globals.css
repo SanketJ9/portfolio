@@ -10,6 +10,7 @@
   --font-primary: var(--primary-font);
   --font-secondary: var(--secondary-font);
   --font-gugi: var(--font-gugi);
+  --font-boldonse: "Boldonse", sans-serif;
 }
 
 * {
@@ -21,7 +22,7 @@
 :root {
   scrollbar-color: #b4b4b4 #ffffff00;
   scrollbar-width: thin;
-  --primary: #111111;
+  --primary: #191919;
   --dark: #0b171f;
   --mid: #ececec;
   --mid-grey: #0c2d40;

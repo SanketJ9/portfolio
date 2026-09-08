@@ -20,7 +20,7 @@ export default function Contact() {
   return (
     <div data-scroll data-scroll-speed="-.2" className="contact-cont container relative mx-auto flex h-[100svh] max-w-[1280px] snap-start flex-col-reverse items-center justify-evenly font-body sm:h-screen sm:flex-row sm:justify-between z-7">
       <div className="contact-left-section flex w-full flex-col justify-evenly sm:w-1/2">
-        <h1 className="contact-heading text-center text-[3rem] font-extrabold leading-none text-primary md:text-left md:text-[3.5rem] lg:text-[4rem] xl:text-[5rem] pb-4 py-6">CONNECT</h1>
+        <h1 className="contact-heading text-center text-[3rem] font-boldonse leading-none text-primary md:text-left md:text-[3.5rem] lg:text-[4rem] xl:text-[5rem] pb-4 py-6">CONNECT</h1>
         
         <div className="social flex flex-row flex-wrap items-center justify-center gap-[30px] sm:justify-start pb-8">
           <a href="https://github.com/SanketJ9" target="blank" rel="noreferrer">
@@ -76,7 +76,7 @@ export default function Contact() {
       
       <div className="contact-right-section flex w-[70%] items-center justify-center sm:w-[40%]">
         <div className="image-cont mx-auto w-full sm:w-[540px]">
-          {/* <img className="email-art w-full" src="/connect.svg" alt="Connect" /> */}
+        {/* <img className="email-art w-full" src="/connect.svg" alt="Connect" /> */}
         </div>
       </div>
     </div>
