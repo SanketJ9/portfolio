@@ -41,12 +41,29 @@ export default function CubeController({ scrollProgressRef }: CubeControllerProp
       // Interpolate position based on scroll
       const progress = scrollProgressRef.current;
       
-      // Define keyframes [progress, x, y, z, scale]
-      const keyframes = [
-        { p: 0.0, pos: new THREE.Vector3(2,0, 0), scale: 0.6 },
-        { p: 0.30, pos: new THREE.Vector3(-2, 0, 0), scale: 0.4},
-        { p: 0.50, pos: new THREE.Vector3(-2.5, 0, 0), scale: 0.4},
-        { p: 0.70, pos: new THREE.Vector3(-2.5, -1, 0), scale: 0.4 },
+      // Responsive keyframes based on viewport width
+      const w = state.viewport.width;
+      // Mobile: w < ~6 (roughly <640px), Tablet: 6-9, Desktop: >9
+      const isMobile = w < 6;
+      const isTablet = w >= 6 && w < 9;
+
+      const keyframes = isMobile ? [
+        { p: 0.0, pos: new THREE.Vector3(0, 0.8, 0), scale: 0.45 },
+        { p: 0.24, pos: new THREE.Vector3(0, 0.2, 0), scale: 0.4 },
+        { p: 0.35, pos: new THREE.Vector3(0.6, -1.8, 0), scale: 0.3 },
+        { p: 0.80, pos: new THREE.Vector3(0.6, -1.8, 0), scale: 0.25 },
+        { p: 1.0, pos: new THREE.Vector3(0, 1.2, 0), scale: 0.4 },
+      ] : isTablet ? [
+        { p: 0.0, pos: new THREE.Vector3(1.5, 0, 0), scale: 0.7 },
+        { p: 0.3, pos: new THREE.Vector3(-1, 0, 0), scale: 0.45 },
+        { p: 0.4, pos: new THREE.Vector3(-2, 0, 0), scale: 0.45},
+        { p: 0.80, pos: new THREE.Vector3(-2, -0.5, 0), scale: 0.45},
+        { p: 1.0, pos: new THREE.Vector3(1.5, 0, 0), scale: 0.45 },
+      ] : [
+        { p: 0.0, pos: new THREE.Vector3(2, 0, 0), scale: 0.7 },
+        { p: 0.30, pos: new THREE.Vector3(-2, 0, 0), scale: 0.4 },
+        { p: 0.50, pos: new THREE.Vector3(-2, 0, 0), scale: 0.4 },
+        { p: 0.70, pos: new THREE.Vector3(-2, -1, 0), scale: 0.4 },
         { p: 1.0, pos: new THREE.Vector3(2, 0, 0), scale: 0.6 },
       ];
 

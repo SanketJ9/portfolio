@@ -96,9 +96,9 @@ export default function Intro() {
 
   return (
     <>
-      <div ref={containerRef} data-scroll data-scroll-speed="-.5" className="landing container">
-        <div className="intro-cont z-0 relative flex min-h-[100svh] flex-col-reverse items-center justify-evenry md:justify-start sm:flex-row sm:justify-between">
-          <div className="intro relative z-0 flex h-max w-full flex-col mb-12 justify-center sm:w-1/2 select-none pointer-events-none">
+      <div ref={containerRef} data-scroll data-scroll-speed="-.5" className="landing container min-h-[100dvh]">
+        <div className="intro-cont z-10 relative flex min-h-[100dvh] min-[2000px]:max-h-[1280px] flex-col justify-end sm:justify-center items-center sm:items-start pt-32 pb-16 sm:py-0">
+          <div className="intro relative z-0 flex h-max w-full flex-col justify-center sm:w-1/2 select-none pointer-events-none">
             <div className="name pb-6">
               <p ref={nameRef} style={{ visibility: "hidden" }} className="text-[2.5rem] md:text-[3rem] lg:text-[3.5rem] xl:text-[4rem] text-center md:text-left font-bold text-primary font-boldonse leading-none">SANKET JADHAV</p>
             </div>

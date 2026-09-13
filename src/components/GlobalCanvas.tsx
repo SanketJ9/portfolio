@@ -10,7 +10,7 @@ interface GlobalCanvasProps {
 
 export default function GlobalCanvas({ scrollProgressRef }: GlobalCanvasProps) {
   return (
-    <div className="fixed inset-0 z-0 pointer-events-none">
+    <div className="fixed inset-0 z-[2] pointer-events-none">
       <Canvas 
         camera={{ position: [0, 0, 5], fov: 45 }}
         style={{ pointerEvents: "none" }}
