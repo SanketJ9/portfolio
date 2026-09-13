@@ -36,8 +36,10 @@ export default function TechStack() {
   return (
     <div 
       ref={containerRef}
-      className="tech-cont container relative z-10 mt-16 sm:mt-20 mb-10 bg-white/10 rounded-3xl shadow-[0_4px_30px_rgba(0,0,0,0.1)] backdrop-blur-md border border-white/10 min-h-[80vh] md:min-h-[25vh] flex flex-col gap-10 overflow-visible p-16 sm:p-12 md:p-16"
+      className="tech-cont container relative z-10 mt-16 sm:mt-20 mb-10"
     >
+      <div className="bg-white/10 rounded-3xl shadow-[0_4px_30px_rgba(0,0,0,0.1)] backdrop-blur-md border border-white/10 min-h-[80vh] md:min-h-[25vh] flex flex-col gap-10 overflow-visible py-12 px-6 md:px-0 sm:py-12 md:py-16">
+
         <div className="heading">
           <p className="text-[2rem] md:text-[3.5rem] lg:text-[4rem] xl:text-[5rem] text-center md:text-center font-bold font-primary text-primary font-heading pb-4 lg:pb-8 leading-none">What's in My Stack</p>
         </div>
@@ -64,6 +66,7 @@ export default function TechStack() {
           <div className="tech flex flex-col items-center gap-1"><SiClaude className="tech-icon cursor-pointer text-6xl lg:text-7xl transition-all duration-300 ease-in-out text-[#D97757]"/><p className="text-sm lg:text-lg font-medium">Claude</p></div>
           <div className="tech flex flex-col items-center gap-1"><SiTanstack className="tech-icon cursor-pointer text-6xl lg:text-7xl transition-all duration-300 ease-in-out text-[#FF4154]"/><p className="text-sm lg:text-lg font-medium">TanStack</p></div>
         </div>
+      </div>
       </div>
   );
 }
