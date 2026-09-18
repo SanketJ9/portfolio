@@ -149,7 +149,7 @@ export default function CubeController({ scrollProgressRef }: CubeControllerProp
       onPointerUp={(e) => { document.body.style.cursor = 'grab'; handlePointerUp(e); }}
       onPointerMove={handlePointerMove}
     >
-      <RubiksCube />
+      <RubiksCube scrollProgressRef={scrollProgressRef} isPreloader={isPreloader} />
     </group>
   );
 }

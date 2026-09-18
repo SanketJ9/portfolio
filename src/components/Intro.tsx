@@ -96,14 +96,14 @@ export default function Intro() {
 
   return (
     <>
-      <div ref={containerRef} data-scroll data-scroll-speed="-.5" className="landing container min-h-[100dvh]">
-        <div className="intro-cont z-10 relative flex min-h-[100dvh] min-[2000px]:max-h-[1280px] flex-col justify-end sm:justify-center items-center sm:items-start pt-32 pb-16 sm:py-0">
-          <div className="intro relative z-0 flex h-max w-full flex-col justify-center sm:w-1/2 select-none pointer-events-none">
-            <div className="name pb-6">
-              <p ref={nameRef} style={{ visibility: "hidden" }} className="text-[2.5rem] md:text-[3rem] lg:text-[3.5rem] xl:text-[4rem] text-center md:text-left font-bold text-primary font-boldonse leading-none">SANKET JADHAV</p>
+      <div ref={containerRef} data-scroll data-scroll-speed="-0.1" className="landing container min-h-[100dvh]">
+        <div className="intro-cont relative z-10 flex min-h-[100dvh] min-[2000px]:max-h-[1280px] flex-col justify-end sm:justify-center items-center sm:items-start pt-32 pb-16 sm:py-0">
+          <div className="intro relative z-10 flex h-max w-full flex-col justify-center sm:w-1/2 select-none pointer-events-none">
+            <div className="name pb-4 md:pb-6">
+              <p ref={nameRef} style={{ visibility: "hidden" }} className="text-[2rem] md:text-[3rem] lg:text-[3.5rem] xl:text-[4rem] text-center md:text-left font-bold text-primary font-boldonse leading-none">SANKET JADHAV</p>
             </div>
-            <div className="role" style={{ visibility: "hidden" }}>
-              <p className="text-[1.5rem] md:text-[1.5rem] lg:text-[2rem] xl:text-[3rem] text-center md:text-left text-gray-500 font-bold pb-3 leading-none">Software Engineer</p>
+            <div className="role pb-2 md:pb-3" style={{ visibility: "hidden" }}>
+              <p className="text-[1.5rem] md:text-[1.5rem] lg:text-[2rem] xl:text-[3rem] text-center md:text-left text-gray-500 font-bold leading-none">Software Engineer</p>
             </div>
             <div className="desc" style={{ visibility: "hidden" }}>
               <p className="text-[1rem] md:text-[1.15rem] lg:text-[1.2rem] xl:text-[1.25rem] text-center md:text-left pb-8 text-grey-700 mix-blend-difference">a passionate and dedicated Software Engineer with 4 years of experience in crafting beautiful and functional websites and web applications.</p>
@@ -114,7 +114,7 @@ export default function Intro() {
                 <a 
                   href="/sanket-jadhav-resume.pdf" 
                   download 
-                  className="gsap-magnetic inline-block max-w-[280px] rounded-lg border border-3 border-primary px-5 py-3 text-center text-[1rem] font-bold fomt-bold text-primary hover:bg-primary hover:text-white focus:outline-none focus:ring-4 focus:ring-blue-300"
+                  className="gsap-magnetic inline-block max-w-[280px] bg-white/20 rounded-[16px] shadow-[0_4px_30px_rgba(0,0,0,0.1)] backdrop-blur-[5px] border border-white/30 px-5 py-3 text-center text-[1rem] font-bold text-primary hover:bg-white/40 hover:text-black transitions focus:outline-none focus:ring-4 focus:ring-blue-300"
                 >
                   Download Resume
                 </a>

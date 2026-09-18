@@ -11,7 +11,7 @@ interface ProjectCardProps {
 
 export default function ProjectCard({ title, desc, url, img, techss }: ProjectCardProps) {
   return (
-    <div className='relative -z-10 lg:z-50 project-card p-3 bg-gray-100 border-2 border-gray-200 rounded-[1em]'>
+    <div className='relative project-card p-3 bg-gray-100 border-2 border-gray-200 rounded-[1em]'>
       <a href={url} target="_blank" rel="noreferrer">
         <div className="project-details">
           <h2 className="project-title text-3xl font-primary font-bold pb-1 text-primary">{title}</h2>

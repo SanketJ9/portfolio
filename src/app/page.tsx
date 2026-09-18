@@ -43,16 +43,42 @@ export default function Home() {
     <>
       <Preloader />
       <GlobalCanvas scrollProgressRef={scrollProgressRef} />
-      <main className="App">
-        <Intro />
-        <div data-scroll="true" data-scroll-speed="-0.15" className="relative z-10" style={{ willChange: "transform" }}>
+            <main className="App">
+        {/* Layer 1: Intro (z-30 on mobile -> sits ABOVE cube at 25, z-0 on desktop) */}
+        <div className="relative z-30 sm:z-0">
+          <Intro />
+        </div>
+
+        {/* Spacer to give Intro full screen time before TechStack glides in */}
+
+        {/* Layer 2: TechStack (z-30 -> sits ABOVE the cube at 25) */}
+        <div 
+          data-scroll="true" 
+          data-scroll-speed="0.2" 
+          className="relative z-30" 
+          style={{ willChange: "transform" }}
+        >
           <TechStack />
         </div>
-        <div className="w-full h-[10vh] md:h-[20vh]"></div>
-        <div data-scroll="true" data-scroll-speed="0.1" style={{ willChange: "transform" }}>
+
+        {/* Layer 3: Project (z-20 -> sits OVER TechStack at 10, but LOWER than Cube at 25) */}
+        <div 
+          data-scroll="true" 
+          data-scroll-speed="0.5" 
+          className="relative z-20" 
+          style={{ willChange: "transform" }}
+        >
           <Project />
         </div>
-        <Contact />
+
+        <div 
+          data-scroll="true" 
+          data-scroll-speed="0.2" 
+          className="relative z-30" 
+          style={{ willChange: "transform" }}
+        >
+          <Contact />  
+        </div>
       </main>
     </>
   );

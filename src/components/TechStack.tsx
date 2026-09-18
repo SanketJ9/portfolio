@@ -36,7 +36,7 @@ export default function TechStack() {
   return (
     <div 
       ref={containerRef}
-      className="tech-cont container relative z-10 mt-16 sm:mt-20 mb-10"
+      className="tech-cont container relative z-30 mt-16 sm:mt-20 mb-10"
     >
       <div className="bg-white/10 rounded-3xl shadow-[0_4px_30px_rgba(0,0,0,0.1)] backdrop-blur-md border border-white/10 min-h-[80vh] md:min-h-[25vh] flex flex-col gap-10 overflow-visible py-12 px-6 md:px-0 sm:py-12 md:py-16">
 
