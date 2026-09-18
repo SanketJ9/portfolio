@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import dynamic from 'next/dynamic';
 
 const Intro = dynamic(() => import('@/components/Intro'), { ssr: false });
@@ -12,8 +12,15 @@ import GlobalCanvas from '@/components/GlobalCanvas';
 
 export default function Home() {
   const scrollProgressRef = useRef(0);
+  const [isPreloader, setIsPreloader] = useState(true);
 
   useEffect(() => {
+    const handlePreloaderComplete = () => {
+      setIsPreloader(false);
+    };
+
+    window.addEventListener('preloaderComplete', handlePreloaderComplete, { once: true });
+
     let scroll: any;
     // Dynamically import locomotive-scroll to avoid server-side window errors
     import('locomotive-scroll').then((LocomotiveScroll) => {
@@ -34,6 +41,7 @@ export default function Home() {
     handleScroll();
 
     return () => {
+      window.removeEventListener('preloaderComplete', handlePreloaderComplete);
       window.removeEventListener('scroll', handleScroll);
       if (scroll) scroll.destroy();
     };
@@ -42,8 +50,8 @@ export default function Home() {
   return (
     <>
       <Preloader />
-      <GlobalCanvas scrollProgressRef={scrollProgressRef} />
-            <main className="App">
+      <GlobalCanvas scrollProgressRef={scrollProgressRef} isPreloader={isPreloader} />
+      <main className={isPreloader ? "App relative z-0" : "App"}>
         {/* Layer 1: Intro (z-30 on mobile -> sits ABOVE cube at 25, z-0 on desktop) */}
         <div className="relative z-30 sm:z-0">
           <Intro />

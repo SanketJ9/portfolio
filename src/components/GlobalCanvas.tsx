@@ -1,16 +1,30 @@
 "use client";
 
 import { Canvas } from "@react-three/fiber";
-import { Suspense } from "react";
+import { Suspense, useState, useEffect } from "react";
 import CubeController from "./CubeController";
 
 interface GlobalCanvasProps {
   scrollProgressRef: React.MutableRefObject<number>;
+  isPreloader?: boolean;
 }
 
-export default function GlobalCanvas({ scrollProgressRef }: GlobalCanvasProps) {
+export default function GlobalCanvas({ scrollProgressRef, isPreloader: externalIsPreloader }: GlobalCanvasProps) {
+  const [internalIsPreloader, setInternalIsPreloader] = useState(true);
+
+  useEffect(() => {
+    const handlePreloaderComplete = () => {
+      setInternalIsPreloader(false);
+    };
+
+    window.addEventListener("preloaderComplete", handlePreloaderComplete, { once: true });
+    return () => window.removeEventListener("preloaderComplete", handlePreloaderComplete);
+  }, []);
+
+  const isPreloader = externalIsPreloader !== undefined ? externalIsPreloader : internalIsPreloader;
+
   return (
-    <div className="fixed inset-0 z-[25] pointer-events-none">
+    <div className={`fixed inset-0 pointer-events-none ${isPreloader ? "z-[60]" : "z-[25]"}`}>
       <Canvas 
         camera={{ position: [0, 0, 5], fov: 45 }}
         style={{ pointerEvents: "none" }}
