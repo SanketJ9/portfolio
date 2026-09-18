@@ -75,7 +75,7 @@ export default function Intro() {
         const rect = btn.getBoundingClientRect();
         const x = (e.clientX - rect.left - rect.width / 2) * 0.2;
         const y = (e.clientY - rect.top - rect.height / 2) * 0.2;
-        gsap.to(btn, { x, y, scale: 1.1, duration: 0.3, ease: "power2.out", overwrite: "auto" });
+        gsap.to(btn, { x, y, scale: 1.05, duration: 0.2, ease: "power2.out", overwrite: "auto" });
       });
       btn.addEventListener("mouseleave", () => {
         gsap.to(btn, { x: 0, y: 0, scale: 1, duration: 0.7, ease: "elastic.out(1, 0.3)", overwrite: "auto" });
@@ -84,7 +84,7 @@ export default function Intro() {
         gsap.to(btn, { scale: 0.95, duration: 0.1, overwrite: "auto" });
       });
       btn.addEventListener("mouseup", () => {
-        gsap.to(btn, { scale: 1.1, duration: 0.3, ease: "back.out(1.5)", overwrite: "auto" });
+        gsap.to(btn, { scale: 1.05, duration: 0.3, ease: "back.out(1.5)", overwrite: "auto" });
       });
     });
 
@@ -114,7 +114,7 @@ export default function Intro() {
                 <a 
                   href="/sanket-jadhav-resume.pdf" 
                   download 
-                  className="gsap-magnetic inline-block max-w-[280px] bg-white/20 rounded-[16px] shadow-[0_4px_30px_rgba(0,0,0,0.1)] backdrop-blur-[5px] border border-white/30 px-5 py-3 text-center text-[1rem] font-bold text-primary hover:bg-white/40 hover:text-black transitions focus:outline-none focus:ring-4 focus:ring-blue-300"
+                  className="gsap-magnetic inline-block max-w-[280px] bg-white/20 rounded-[8px] backdrop-blur-[5px] border-2 border-black px-5 py-3 text-center text-[1rem] font-bold text-primary hover:bg-white/40 hover:text-black transitions focus:outline-none focus:ring-4 focus:ring-blue-300"
                 >
                   Download Resume
                 </a>

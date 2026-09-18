@@ -21,11 +21,11 @@ export default function Project() {
     <div 
       className="pro relative container py-32 md:py-16 grid grid-cols-1 md:grid-cols-3 gap-8"
     >
-      <div className="text-left md:col-span-1 sticky top-10 md:top-20 self-start h-max">
+      <div className="text-left md:col-span-1 sticky top-10 md:top-20 self-start h-max relative z-10">
         <h2 className="text-5xl md:text-7xl lg:text-8xl font-bold text-primary uppercase text-center md:text-left tracking-tight font-boldonse">PROJECTS</h2>
       </div>
       <div 
-        className='project-cont md:col-span-2 mt-[0.75em] grid grid-cols-1 gap-8 py-5 md:mt-[-3em] md:grid-cols-2 lg:mt-[2em] xl:mt-[3em]'
+        className='project-cont md:col-span-2 mt-[0.75em] grid grid-cols-1 gap-8 py-5 md:mt-[-3em] md:grid-cols-2 lg:mt-[2em] xl:mt-[3em] relative z-20'
       >
         {projectCards}
       </div>

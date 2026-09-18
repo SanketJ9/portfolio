@@ -61,11 +61,11 @@ export default function Home() {
           <TechStack />
         </div>
 
-        {/* Layer 3: Project (z-20 -> sits OVER TechStack at 10, but LOWER than Cube at 25) */}
+        {/* Layer 3: Project (z-40 -> sits OVER TechStack at 30, and ABOVE Cube at 25) */}
         <div 
           data-scroll="true" 
           data-scroll-speed="0.5" 
-          className="relative z-20" 
+          className="relative z-40" 
           style={{ willChange: "transform" }}
         >
           <Project />
@@ -74,7 +74,7 @@ export default function Home() {
         <div 
           data-scroll="true" 
           data-scroll-speed="0.2" 
-          className="relative z-30" 
+          className="relative z-50" 
           style={{ willChange: "transform" }}
         >
           <Contact />  
